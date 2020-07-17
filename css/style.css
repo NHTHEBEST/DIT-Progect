@@ -89,15 +89,15 @@ body {
     padding: 16px;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+#main {
+
+    margin: 0;
+
+    flex: 1 0 auto;
+    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
 }
 
-.sticky + .content {
-    padding-top: 60px;
-}
 
 .tech-slideshow {
     height: 200px;
@@ -134,4 +134,38 @@ body {
     100% {
         transform: translateX(-66.6666%);
     }
+}
+
+footer {
+    flex-shrink: 0;
+    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    background-color: #070086;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+#warpper {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -90px;
+}
+
+.push {
+    height: 90px;
+}
+
+/* remove scrole bar*/
+
+html::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
