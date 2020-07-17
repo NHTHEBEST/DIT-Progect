@@ -126,9 +126,7 @@ body {
 
 
 
-.tech-slideshow:hover .mover-2 {
-    opacity: 1;
-}
+
 
 @keyframes moveSlideshow {
     100% {
