@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/page.js"></script>
     <script>
-        //ReplaceContent("index.html", "index");
+        //ReplaceContent("contact.html", "contact");
+
+        var last = document.getElementById("contact");
 
     </script>
 </head>
@@ -21,11 +23,11 @@
             </a>
         </div>
         <div class="topnav" id="navbar">
-            <a href="javascipt:void()" onclick='ReplaceContent("index.html", "index");'>Home</a>
-            <a href="javascipt:void()" onclick='ReplaceContent("info.html", "info");'>Info</a>
-            <a href="javascipt:void()" onclick='ReplaceContent("goodvbad.html", "goodvbad");'>Good vs Bad</a>
-            <a href="javascipt:void()" onclick='ReplaceContent("gallary.html", "gallary");'>Gallary</a>
-            <a class="active" href="javascipt:void()" onclick='ReplaceContent("contact.html", "contact");'>Contact</a>
+            <a id="index" href="javascipt:void()" onclick='ReplaceContent("index.html", "index");'>Home</a>
+            <a id="info" href="javascipt:void()" onclick='ReplaceContent("info.html", "info");'>Info</a>
+            <a id="goodvbad" href="javascipt:void()" onclick='ReplaceContent("goodvbad.html", "goodvbad");'>Good vs Bad</a>
+            <a id="gallary" href="javascipt:void()" onclick='ReplaceContent("gallary.html", "gallary");'>Gallary</a>
+            <a id="contact" class="active" href="javascipt:void()" onclick='ReplaceContent("contact.html", "contact");'>Contact</a>
             <div class="search-container">
                 <form action="https://google.com/">
                     <input type="text" placeholder="Search.." name="q">

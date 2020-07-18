@@ -7,6 +7,14 @@ function ReplaceContent(url, name) {
             //document.getElementsByName("demo").innerHTML = xhttp.responseText;
             document.getElementById("main").innerHTML = xhttp.responseText;
             window.history.pushState(name, document.title, url);
+
+            if (last == null) {
+                last = document.getElementById(name);
+            } else {
+                last.classList.remove("active");
+            }
+            last = document.getElementById(name);
+            last.classList.add("active");
         }
     };
     xhttp.open("GET", "/content/" + url, true);
