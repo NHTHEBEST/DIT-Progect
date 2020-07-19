@@ -324,3 +324,22 @@ textarea {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #e2e2e2;
+}
