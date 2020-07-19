@@ -103,7 +103,7 @@ body {
 
     flex: 1 0 auto;
     /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-    padding: 20px;
+    padding: 0;
 }
 
 
@@ -203,8 +203,8 @@ a:active {
 .box1 {
     top: 0;
     min-height: 200px;
-    width: 45%;
-    max-width: 45%;
+    width: 49%;
+    max-width: 49%;
     position: absolute;
     right: 0;
     top: 0;
@@ -216,8 +216,8 @@ a:active {
 .box2 {
     top: 0;
     min-height: 200px;
-    width: 45%;
-    max-width: 45%;
+    width: 49%;
+    max-width: 49%;
     position: absolute;
     left: 0;
     top: 0;
@@ -233,4 +233,90 @@ a:active {
 .box1 h1 {
     text-align: center;
     font-family: Gaoel !important;
+}
+
+.parallax {
+
+    background-image: url('/images/plastic-bottles-388679_1280.jpg');
+    /* Full height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+
+    background-image: url('/images/can-3489894_1280.jpg');
+    /* Full height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+
+    background-image: url('/images/strawberries-5337361_1280.jpg');
+    /* Full height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+#main input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+#main input[type=submit] {
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+#main input[type=submit]:hover {
+    background-color: #2388d8;
+}
+
+/* Add a background color and some padding around the form */
+#main .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
