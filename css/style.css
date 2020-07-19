@@ -243,7 +243,7 @@ a:active {
 
     background-image: url('/images/plastic-bottles-388679_1280.jpg');
     /* Full height */
-    min-height: 500px;
+    min-height: 1000px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -256,7 +256,7 @@ a:active {
 
     background-image: url('/images/can-3489894_1280.jpg');
     /* Full height */
-    min-height: 500px;
+    min-height: 1000px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -269,7 +269,7 @@ a:active {
 
     background-image: url('/images/strawberries-5337361_1280.jpg');
     /* Full height */
-    min-height: 500px;
+    min-height: 1000px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -278,7 +278,14 @@ a:active {
     background-size: cover;
 }
 
+.parallaxtext {
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.38);
+    padding: auto;
+    text-align: center;
 
+    backdrop-filter: blur(2px);
+}
 
 
 /* Style inputs with type="text", select elements and textareas */
