@@ -1,12 +1,14 @@
 <div class="container">
+<!-- The Form that is used to contact the webmaster (dosent do anything) -->
     <form action="/contact.html">
 
+        <!-- first name lable and input -->
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
+        <!-- last name lable and input -->
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
+        <!-- contry lable and input -->
         <label for="country">Country</label>
         <select id="country" name="country">
             <option value="australia">Australia</option>
@@ -15,9 +17,11 @@
             <option value="usa">USA</option>
         </select>
 
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <!-- the acual place to submit most of your data -->
+        <label for="Details">Details</label>
+        <textarea id="Details" name="Details" placeholder="Write something.." style="height:200px"></textarea>
 
+        <!-- The Submit button -->
         <input type="submit" value="Submit">
 
     </form>

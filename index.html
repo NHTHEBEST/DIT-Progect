@@ -3,10 +3,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
+    <!-- The title in the tab bar -->
     <title>Trash &amp; Groceries</title>
+    <!--The font that contains the icon for the search bar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!--page loding js-->
     <script src="/js/page.js"></script>
+    <!--loads the acuale content-->
     <script>
         ReplaceContent("index.html", "index");
         var last = document.getElementById("index");
@@ -15,37 +19,38 @@
 </head>
 
 <body>
+    <!--Wrapper div is to push the fotter to the bottem-->
     <div id="warpper">
-        <div class="header">
-            <a href="javascipt:void()" onclick='ReplaceContent("index.html", "index");'>
+        <div class="header"> <!--website title-->
+            <a href="javascipt:void()" onclick='ReplaceContent("index.html", "index");'><!--link it to home page-->
                 <h1 class="sitetitle">TRASH &amp; GROCERIES</h1>
             </a>
         </div>
-        <div class="topnav" id="navbar">
+        <div class="topnav" id="navbar"><!--the bav bar-->
             <a id="index" class="active" href="javascipt:void()" onclick='ReplaceContent("index.html", "index");'>Home</a>
             <a id="info" href="javascipt:void()" onclick='ReplaceContent("info.html", "info");'>Info</a>
 
             <a id="gallery" href="javascipt:void()" onclick='ReplaceContent("gallery.html", "gallery");'>Gallery</a>
             <a id="contact" href="javascipt:void()" onclick='ReplaceContent("contact.html", "contact");'>Contact</a>
-            <div class="search-container">
-                <form action="https://google.com/">
+            <div class="search-container"><!--the search box-->
+                <form action="https://google.com/"><!--submit to google-->
                     <input type="text" placeholder="Search.." name="q">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
         </div>
-        <div style="padding: 0" class="content">
-            <div class="tech-slideshow">
+        <div style="padding: 0" class="content"><!--the content div-->
+            <div class="tech-slideshow"><!--infinet slider-->
                 <div class="mover-1"></div>
             </div>
             <div style="padding: 3px; background-color: #e9e9e9"></div>
-            <div id="main" style="">
+            <div id="main"><!--this is were the js loads the page into-->
 
             </div>
-            <div class="push"></div>
+            <div class="push"></div><!--pushes the fotter to the bottem-->
         </div>
     </div>
-    <footer>
+    <footer><!--the footer-->
         Copyright &copy; 2020 Noam Hadar<br> Images from <a style="color: black; text-decoration: none;" target="_blank" href="https://pixabay.com/">Pixabay.com</a> &amp; Noam Hadar
     </footer>
 </body>
